@@ -10,15 +10,15 @@
 
 # 2. Data 
 
-### 2.1 Description
+## 2.1 Description
 
-- ##### Flie Content
+- #### Flie Content
 
 | Data                 | Size     | p(variables) | n(observations) |
 | -------------------- | -------- | ------------ | --------------- |
 | winemag-data-130k-v2 | 50.46 MB | 119988       | 13              |
 
-- ##### Part of the data (winemag-data-130k-v2)
+- #### Part of the data (winemag-data-130k-v2)
 
 因資料過於龐大，無法將所有變數列出，若需要詳細資料可至[Wine Reviews][https://www.kaggle.com/zynicide/wine-reviews]查看。
 
@@ -30,9 +30,9 @@
 
 
 
-### 2.2 Variables
+## 2.2 Variables
 
-* ##### Response variables(imbalance)
+* #### Response variables(imbalance)
 
 在此資料集中葡萄種類一共有707種，但有些葡萄種類樣本過少，所以選擇預測前六大的葡萄種類。
 
@@ -46,7 +46,7 @@
 |Riesling|4773|
 |**Total**|**51451**|
 
-* ##### Predictor variables
+* #### Predictor variables
 
 對於喝下葡萄酒之後品酒師的描述。
 
