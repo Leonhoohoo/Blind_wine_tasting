@@ -1,10 +1,10 @@
 # Ｗine tasting
 
-* ##### Data set:[Wine Reviews][https://www.kaggle.com/zynicide/wine-reviews]
+* ##### Data set:[Wine Reviews](https://www.kaggle.com/zynicide/wine-reviews)
 
 # 1. Introduction
 
-​	[Somm][https://www.imdb.com/title/tt2204371/]是一部描述四個品酒師考取Master Sommelier的電影，在當中有項測試是盲品，再不看酒標的狀態下，憑藉著酒的氣味、顏色、香味去判斷葡萄酒的品種、產區、品牌、年份，甚至哪片葡萄園。
+​	[Somm](https://www.imdb.com/title/tt2204371/)是一部描述四個品酒師考取Master Sommelier的電影，在當中有項測試是盲品，再不看酒標的狀態下，憑藉著酒的氣味、顏色、香味去判斷葡萄酒的品種、產區、品牌、年份，甚至哪片葡萄園。
 
 ​	在此，我們想要根據品酒師喝下葡萄酒後說出來的話來猜測這瓶酒的葡萄品種，讓我們的機器也能擁有盲品的能力。
 
@@ -20,7 +20,7 @@
 
 - #### Part of the data (winemag-data-130k-v2)
 
-因資料過於龐大，無法將所有變數列出，若需要詳細資料可至[Wine Reviews][https://www.kaggle.com/zynicide/wine-reviews]查看。
+因資料過於龐大，無法將所有變數列出，若需要詳細資料可至[Wine Reviews](https://www.kaggle.com/zynicide/wine-reviews)查看。
 
 | Country | Description                                       | Designation                        | Variety            |
 | ------- | ------------------------------------------------- | ---------------------------------- | ------------------ |
