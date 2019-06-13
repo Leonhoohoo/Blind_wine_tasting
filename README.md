@@ -306,61 +306,25 @@ Cross Validation (5 fold) for  My Model
   
 - #### Confusion Matrix(Train)
 
-  <table border="1" class="dataframe">
-  <thead>
-      <tr style="text-align: right;">
-        <th></th>
-        <th>Red</th>
-        <th>White</th>
-      </tr>
-      <tr>
-        <th>Real</th>
-        <th></th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>Red</th>
-        <td>25080</td>
-        <td>3</td>
-      </tr>
-      <tr>
-        <th>White</th>
-        <td>2</td>
-        <td>10947</td>
-      </tr>
-    </tbody>
-  </table>
+  |           | Red   | White |
+  | --------- | ----- | ----- |
+  | Real      |       |       |
+  | **Red**   | 25080 | 3     |
+  | **White** | 2     | 10947 |
+  
+  
   
 - #### Confusion Matrix
 
-   <table border="1" class="dataframe">
-    <thead>
-        <tr style="text-align: right;">
-        <th></th>
-          <th>Red</th>
-          <th>White</th>
-        </tr>
-        <tr>
-          <th>Real</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th>Red</th>
-          <td>10664</td>
-          <td>85</td>
-        </tr>
-        <tr>
-          <th>White</th>
-          <td>83</td>
-          <td>4609</td>
-        </tr>
-      </tbody>
-    </table>
+   |           | Red   | White |
+   | --------- | ----- | ----- |
+   | **Real**  |       |       |
+   | **Red**   | 10664 | 85    |
+   | **White** | 93    | 4609  |
+   
+   
+   
+   
 
 
 ## Stacking 1
@@ -550,7 +514,7 @@ Cross Validation (5 fold) for  My Model
 
   Testing error : 0.137
 
-- ###Confusion Matrix(Train)
+- #### Confusion Matrix(Train)
 
   <table border="1" class="dataframe">
     <thead>
@@ -631,7 +595,7 @@ Cross Validation (5 fold) for  My Model
     </tbody>
   </table>
 
-- ###Confusion Matrix(Test)
+- #### Confusion Matrix(Test)
 
   <table border="1" class="dataframe">
     <thead>
