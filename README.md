@@ -8,11 +8,11 @@
 
 # Conclusion
 
-​    根據品酒師評論葡萄酒的描述，用來分類是屬於一種葡萄所釀造的酒，經過一些程序的處理，最終可得到Testing Error約在0.135。
+​    根據品酒師評論葡萄酒的描述，用來分類是屬於一種葡萄所釀造的酒，經過一些程序的處理，最終可得到**Testing Error約在0.135**。
 
 
 
-Cross Validation (5 fold) for  My Model
+Cross Validation  for  My Model
 
 |       | Training Error | Testing Error |
 | :---: | :------------: | :-----------: |
@@ -107,7 +107,7 @@ Cross Validation (5 fold) for  My Model
 
 - #### TF_IDF
 
-  先將句子轉為TF\_IDF (n\_grams為$(1,2)$)，再用F檢定選出前兩萬個p-value顯著的參數。
+  先將句子轉為TF\_IDF (n\_grams為(1,2))，再用F檢定選出前兩萬個p-value顯著的參數。
 
 
 
