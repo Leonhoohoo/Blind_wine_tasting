@@ -108,8 +108,6 @@ Cross Validation (5 fold) for  My Model
 - #### TF_IDF
 
   先將句子轉為TF\_IDF (n\_grams為$(1,2)$)，再用F檢定選出前兩萬個p-value顯著的參數。
-  
-  
 
 
 
@@ -308,26 +306,64 @@ Cross Validation (5 fold) for  My Model
   
 - #### Confusion Matrix(Train)
 
-  |           |  Red  | White |
-  | :-------: | :---: | :---: |
-  | **Real**  |       |       |
-  |  **Red**  | 25080 |   3   |
-  | **White** |   2   | 10947 |
-  
-  
+  <table border="1" class="dataframe">
+  <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>Red</th>
+        <th>White</th>
+      </tr>
+      <tr>
+        <th>Real</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Red</th>
+        <td>25080</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <th>White</th>
+        <td>2</td>
+        <td>10947</td>
+      </tr>
+    </tbody>
+  </table>
   
 - #### Confusion Matrix
 
-   |           | Red   | White |
-   | --------- | ----- | ----- |
-   | **Real**  |       |       |
-   | **Red**   | 10664 | 85    |
-   | **White** | 83    | 4609  |
-   
-   
+   <table border="1" class="dataframe">
+    <thead>
+        <tr style="text-align: right;">
+        <th></th>
+          <th>Red</th>
+          <th>White</th>
+        </tr>
+        <tr>
+          <th>Real</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Red</th>
+          <td>10664</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <th>White</th>
+          <td>83</td>
+          <td>4609</td>
+        </tr>
+      </tbody>
+    </table>
 
 
-## Stacking
+## Stacking 1
 
 - #### Combine XGboost_1 and XGboost_2
 
@@ -499,8 +535,184 @@ Cross Validation (5 fold) for  My Model
       </tr>
     </tbody>
   </table>
-  
-  
+
+
+
+## Stacking 2
+
+- #### White Wine or Red Wine (binary classification)
+
+- #### Train two model to predict variety
+
+- #### Train error and Testing error
+
+  Train error : 0.008
+
+  Testing error : 0.137
+
+- ###Confusion Matrix(Train)
+
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>Pinot Noir</th>
+        <th>Chardonnay</th>
+        <th>Cabernet Sauvignon</th>
+        <th>Red Blend</th>
+        <th>Bordeaux-style Red Blend</th>
+        <th>Riesling</th>
+      </tr>
+      <tr>
+        <th>Real</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Pinot Noir</th>
+        <td>8592</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>Chardonnay</th>
+        <td>0</td>
+        <td>7573</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>35</td>
+      </tr>
+      <tr>
+        <th>Cabernet Sauvignon</th>
+        <td>9</td>
+        <td>0</td>
+        <td>6178</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>Red Blend</th>
+        <td>8</td>
+        <td>0</td>
+        <td>7</td>
+        <td>5754</td>
+        <td>1</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>Bordeaux-style Red Blend</th>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td>4529</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>Riesling</th>
+        <td>0</td>
+        <td>206</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3135</td>
+      </tr>
+    </tbody>
+  </table>
+
+- ###Confusion Matrix(Test)
+
+  <table border="1" class="dataframe">
+    <thead>
+      <tr style="text-align: right;">
+        <th></th>
+        <th>Pinot Noir</th>
+        <th>Chardonnay</th>
+        <th>Cabernet Sauvignon</th>
+        <th>Red Blend</th>
+        <th>Bordeaux-style Red Blend</th>
+        <th>Riesling</th>
+      </tr>
+      <tr>
+        <th>Real</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Pinot Noir</th>
+        <td>3276</td>
+        <td>48</td>
+        <td>163</td>
+        <td>44</td>
+        <td>144</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <th>Chardonnay</th>
+        <td>30</td>
+        <td>3150</td>
+        <td>11</td>
+        <td>1</td>
+        <td>19</td>
+        <td>49</td>
+      </tr>
+      <tr>
+        <th>Cabernet Sauvignon</th>
+        <td>241</td>
+        <td>4</td>
+        <td>2179</td>
+        <td>158</td>
+        <td>70</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>Red Blend</th>
+        <td>148</td>
+        <td>7</td>
+        <td>276</td>
+        <td>1896</td>
+        <td>145</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <th>Bordeaux-style Red Blend</th>
+        <td>94</td>
+        <td>17</td>
+        <td>119</td>
+        <td>94</td>
+        <td>1617</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <th>Riesling</th>
+        <td>20</td>
+        <td>200</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1210</td>
+      </tr>
+    </tbody>
+  </table>
+
+
 
 
 
@@ -530,12 +742,21 @@ Cross Validation (5 fold) for  My Model
 
   
 
-- #### Stacking
+- #### Stacking 1
 
   |                    | Default Hyperparameter | Tuning Hyperparameter |
   | :----------------: | :--------------------: | :-------------------: |
   | **Training Error** |         0.167          |         0.000         |
   | **Testing Error**  |         0.188          |         0.135         |
+
+  
+  
+- #### Stacking 2
+
+  |                    | Default Hyperparameter | Tuning Hyperparameter |
+  | :----------------: | :--------------------: | :-------------------: |
+  | **Training Error** |         0.168          |         0.008         |
+  | **Testing Error**  |         0.188          |         0.137         |
 
   
 
