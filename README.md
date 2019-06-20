@@ -103,7 +103,15 @@ Cross Validation  for  My Model
   
   
 
-# 3. Feature Engineering
+# 3.Pre-processing
+
+- #### Split data to training and testing
+
+  將原本的資料依照比例分七成與三成，七成為training data 三成為testing data
+
+  
+
+# 4. Feature Engineering
 
 - #### TF_IDF
 
@@ -111,7 +119,7 @@ Cross Validation  for  My Model
 
 
 
-# 4. Ensemble
+# 5. Ensemble
 
 
 
